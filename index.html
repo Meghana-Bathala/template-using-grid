@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gridcss</title>
+    <link rel="shortcut icon" href="./images/clapperboard.png" type="image/x-icon">
+    <style>
+       
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+        *{
+            font-family: 'Roboto', sans-serif;
+            padding:0;
+            margin:0;
+            background-color: rgb(189, 131, 243);
+            box-sizing: border-box;
+        }
+        .header{
+            padding: 20px 0px;
+            text-align: center;
+            color:white;
+        }
+        h2{
+            padding-top:10px;
+        }
+        .container{
+            display: grid;
+            grid-template-columns:200px 200px 200px;
+            justify-content: center;
+            gap:15px;
+            padding-bottom: 20px;
+        }
+        .profile{
+            background-color: white;
+            border: 2px solid white;
+            width:200px;
+            height:360px;
+            border-radius: 20px;
+        }
+        img{
+            /* position: relative;
+            left:25px; */
+            margin:20px;
+        }
+        .details{
+            background-color: white;
+            text-align: center;
+            margin:0 2px;
+        }
+        h4{
+            background-color: white;
+            color: rgb(189, 131, 243);
+            padding-bottom:20px;
+        }
+        button{
+            border:none;
+            padding:5px 30px;
+            margin:20px;
+            border-radius:20px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        p{
+            font-size: 12px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <!--Header section-->
+    <div class="header">FEATURES<h2>Our Features & Services</h2></div>
+    <!--using grids to design container-->
+    <div class="container">
+        <!--6 profile cards-->
+        <div class="profile cards">
+            <img src="./video.jpg" alt="" width="150px" height="150px">
+            <div class="details">
+                <h4>Video Production</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, reprehenderit. </p>
+                <button><a href="">MORE</a></button>
+            </div>
+        </div>
+        <div class="profile cards">
+            <img src="./seo.jpg" alt="" width="150px" height="150px">
+            <div class="details">
+                <h4>SEO Optimozation</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, reprehenderit. </p>
+                <button><a href="">MORE</a></button>
+            </div>  
+        </div>
+        <div class="profile cards">
+            <img src="./cloud solu.jpg" alt="" width="150px" height="150px">
+            <div class="details">
+                <h4>Cloud Solutions</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, reprehenderit. </p>
+                <button><a href="">MORE</a></button>
+            </div>
+        </div>
+        <div class="profile cards">
+            <img src="./customers.jpg" alt="" width="150px" height="150px">
+            <div class="details">
+                <h4>Happy Customers</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, reprehenderit. </p>
+                <button><a href="">MORE</a></button>
+            </div>
+        </div>
+        <div class="profile cards">
+            <img src="./marketing.jpg" alt="" width="150px" height="150px">
+            <div class="details">
+                <h4>Marketing strategy</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, reprehenderit. </p>
+                <button><a href="">MORE</a></button>
+            </div>
+        </div>
+        <div class="profile cards">
+            <img src="./podcast.jpg" alt="" width="150px" height="150px">
+            <div class="details">
+                <h4>podcast Talks</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, reprehenderit. </p>.
+                <button><a href="">MORE</a></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
